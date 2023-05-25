@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SensorView</string>
+    <string name="title_activity_sensor_detail">SensorDetailActivity</string>
+</resources>
