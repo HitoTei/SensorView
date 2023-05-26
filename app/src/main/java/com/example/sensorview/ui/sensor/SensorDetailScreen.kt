@@ -17,6 +17,12 @@ fun SensorDetailScreen(sensorType: Int, value: LiveData<List<Float>>) {
         } else {
             when (sensorType) {
                 Sensor.TYPE_ACCELEROMETER -> AccelerometerSensorDetail(it)
+                Sensor.TYPE_AMBIENT_TEMPERATURE -> AmbientTemperatureSensorDetail(it)
+                Sensor.TYPE_GRAVITY -> GravitySensorDetail(it)
+                Sensor.TYPE_GYROSCOPE -> GyroscopeSensorDetail(it)
+                Sensor.TYPE_LIGHT -> LightSensorDetail(it)
+                Sensor.TYPE_MAGNETIC_FIELD -> MagneticFieldSensorDetail(it)
+                Sensor.TYPE_PRESSURE -> PressureSensorDetail(it)
                 else -> Text("Not implemented yet")
             }
         }
