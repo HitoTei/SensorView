@@ -11,11 +11,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 @Composable
-fun SensorList(sensorManager: SensorManager, onSensorClick: (Int) -> Unit, modifier: Modifier) {
+fun SensorList(sensorManager: SensorManager, onTileClick: (Int) -> Unit, modifier: Modifier) {
     sensorManager.getSensorList(Sensor.TYPE_ALL)
     Column(modifier.verticalScroll(rememberScrollState())) {
         for (sensor in sensorManager.getSensorList(Sensor.TYPE_ALL)) {
-            Button(onClick = { onSensorClick(sensor.type) }) {
+            Button(onClick = { onTileClick(sensor.type) }) {
                 Text(text = sensor.name)
             }
         }

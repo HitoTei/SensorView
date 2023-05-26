@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    SensorList(sensorManager = sensorManager, onSensorClick = { sensorType ->
+                    SensorList(sensorManager = sensorManager, onTileClick = { sensorType ->
                         val intent = Intent(this, SensorDetailActivity::class.java).apply {
                             putExtra("sensorType", sensorType)
                         }
