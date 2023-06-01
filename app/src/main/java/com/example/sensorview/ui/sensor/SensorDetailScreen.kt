@@ -6,6 +6,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.livedata.observeAsState
 import androidx.lifecycle.LiveData
+import com.example.sensorview.ui.sensor.details.AccelerometerSensorDetail
+import com.example.sensorview.ui.sensor.details.AmbientTemperatureSensorDetail
+import com.example.sensorview.ui.sensor.details.GravitySensorDetail
+import com.example.sensorview.ui.sensor.details.GyroscopeSensorDetail
+import com.example.sensorview.ui.sensor.details.LightSensorDetail
+import com.example.sensorview.ui.sensor.details.MagneticFieldSensorDetail
+import com.example.sensorview.ui.sensor.details.PressureSensorDetail
 
 @Composable
 fun SensorDetailScreen(sensorType: Int, value: LiveData<List<Float>>) {

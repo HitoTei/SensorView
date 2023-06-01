@@ -1,4 +1,4 @@
-package com.example.sensorview.ui.sensor
+package com.example.sensorview.ui.sensor.details
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.material3.Text
